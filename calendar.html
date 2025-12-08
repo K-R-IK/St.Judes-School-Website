@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Calendar – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- MAIN CONTENT -->
+  <section>
+    <h2>Academic Calendar</h2>
+    <p>Stay informed about all important dates, exams, holidays, and school events for the academic year.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Event</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>April</td>
+          <td>New Academic Year Begins</td>
+          <td>01-Apr-2025</td>
+        </tr>
+        <tr>
+          <td>August</td>
+          <td>Independence Day Celebration</td>
+          <td>15-Aug-2025</td>
+        </tr>
+        <tr>
+          <td>September</td>
+          <td>Mid-Term Exams</td>
+          <td>22-Sep-2025 to 30-Sep-2025</td>
+        </tr>
+        <tr>
+          <td>October</td>
+          <td>Diwali Holidays</td>
+          <td>02-Oct-2025 to 06-Oct-2025</td>
+        </tr>
+        <tr>
+          <td>December</td>
+          <td>Winter Break</td>
+          <td>25-Dec-2025 to 31-Dec-2025</td>
+        </tr>
+        <tr>
+          <td>March</td>
+          <td>Final Exams & Farewell</td>
+          <td>01-Mar-2026 to 15-Mar-2026</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Download the full academic calendar for detailed schedules:</p>
+    <a href="academic_calendar_of_st.judes_school.pdf" class="pdf-button" target="_blank">Download PDF</a>
+  </section>
+  <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

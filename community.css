@@ -1,0 +1,64 @@
+/* COMMUNITY CSS */
+
+/* Section Headings */
+section h2 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00509e;
+}
+
+section h3 {
+  font-size: 1.6em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #0073e6;
+  text-align: left;
+}
+
+/* Paragraphs */
+section p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Lists */
+section ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+section ul li {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  margin-bottom: 12px;
+}
+
+/* Highlight key points */
+section ul li strong {
+  color: #003366;
+}
+
+/* Quick Links Section */
+#quick-links {
+  margin-top: 40px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 2em;
+  }
+
+  section h3 {
+    font-size: 1.4em;
+  }
+
+  section p,
+  section ul li {
+    font-size: 1em;
+  }
+}

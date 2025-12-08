@@ -1,0 +1,88 @@
+/* ASSESSMENT CSS */
+
+/* PAGE STRUCTURE */
+.page-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding-bottom: 50px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Intro Paragraph */
+.page-intro {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* CONTENT BOXES */
+.content-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #1a73e8;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.content-box h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #003366;
+    font-weight: 600;
+}
+
+.content-box h3 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.content-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Lists */
+.content-box ul {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.content-box ul li {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 26px;
+    }
+    
+    .content-box {
+        padding: 18px;
+    }
+
+    .content-box h2 {
+        font-size: 20px;
+    }
+
+    .content-box h3 {
+        font-size: 18px;
+    }
+}

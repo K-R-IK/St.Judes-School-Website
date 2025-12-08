@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment & Evaluation - ST. JUDE'S SCHOOL</title>
+    <link rel="stylesheet" href="common_styles.css">
+    <link rel="stylesheet" href="assessment.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- PAGE CONTENT -->
+    <section class="page-container">
+
+        <h1 class="page-title">Assessment & Evaluation</h1>
+
+        <p class="page-intro">
+            Our assessment framework is designed to drive consistent learning outcomes by combining 
+            structured evaluation, continuous feedback, and strong academic discipline.
+        </p>
+
+        <!-- MAIN SECTIONS -->
+        <div class="content-box">
+            <h2>1. Assessment Philosophy</h2>
+            <p>
+                Our evaluation model reinforces conceptual clarity, consistent practice, and strong 
+                academic habits. We focus on tracking progress over time instead of one-time testing.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h2>2. Types of Assessments</h2>
+            <h3>Formative Assessments</h3>
+            <ul>
+                <li>Regular class tests</li>
+                <li>Oral assessments & recitations</li>
+                <li>Homework reviews</li>
+                <li>Activity-based evaluations</li>
+            </ul><br>
+
+            <h3>Summative Assessments</h3>
+            <ul>
+                <li>Mid-term examinations</li>
+                <li>Annual examinations</li>
+                <li>Project submissions</li>
+                <li>Practical exams (Science & Computer)</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>3. Grading System</h2>
+            <p>
+                Grades reflect overall academic achievement, discipline, and participation. Each grade 
+                indicates the learner’s mastery level in both theoretical and practical components.
+            </p>
+            <ul>
+                <li>A1 – Outstanding</li>
+                <li>A2 – Excellent</li>
+                <li>B1 – Very Good</li>
+                <li>B2 – Good</li>
+                <li>C – Satisfactory</li>
+                <li>D – Needs Improvement</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>4. Promotion Policy</h2>
+            <p>
+                Promotions are based on combined performance in assignments, examinations, attendance, 
+                discipline, and overall participation. Continuous support is given to students requiring 
+                improvement.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h2>5. Parent–Teacher Interaction</h2>
+            <p>
+                Transparent communication is the backbone of improvement. Parent–Teacher Meetings (PTMs) 
+                are held regularly to review progress and discuss academic strategies.
+            </p>
+        </div>
+        
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <div id="quicklinks"></div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    
+    <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

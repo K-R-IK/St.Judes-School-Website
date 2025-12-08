@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Overview - ST. JUDE'S SCHOOL</title>
+    <link rel="stylesheet" href="admission_overview.css">
+    <link rel="stylesheet" href="common_styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER (common) -->
+    <div id="header"></div>
+
+    <div class="page-container">
+    <h1 class="page-title">Admission Overview</h1>
+
+        <p class="page-intro">
+            Our admission process is structured, transparent, and aligned with the school's commitment 
+            to academic excellence and holistic development. We welcome students who demonstrate 
+            curiosity, discipline, and a readiness to grow in a nurturing environment.
+        </p>
+
+        <!-- SECTION 1 -->
+        <div class="content-box">
+            <h2>Eligibility Criteria</h2>
+            <p>
+                Admission is open to all students irrespective of caste, religion, or background. 
+                Entry-level classes follow age-based guidelines, while higher classes require 
+                academic record verification.
+            </p>
+            <h3>Age Requirements</h3>
+            <ul>
+                <li>Nursery: 3+ years</li>
+                <li>Kindergarten: 4+ years</li>
+                <li>Grade 1: 5+ years</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="content-box">
+            <h2>Documents Required</h2>
+            <ul>
+                <li>Birth Certificate (mandatory)</li>
+                <li>Previous School Transfer Certificate (if applicable)</li>
+                <li>Report Card of last academic year</li>
+                <li>Aadhar Card of student</li>
+                <li>Two passport-size photographs</li>
+                <li>Parent/Guardian ID Proof</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="content-box">
+            <h2>Admission Timeline</h2>
+            <p>Admissions typically open in the first week of January and continue based on the availability of seats.</p>
+
+            <h3>Key Phases</h3>
+            <ul>
+                <li>Form Availability</li>
+                <li>Submission Window</li>
+                <li>Interaction/Assessment (if required)</li>
+                <li>Final List Announcement</li>
+                <li>Fee Payment & Enrollment</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="content-box">
+            <h2>Why Choose Our School?</h2>
+            <p>
+                With a legacy of academic leadership, advanced facilities, and a student-first approach, 
+                we ensure every child receives the right foundation for future success.
+            </p>
+        </div>
+
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+      
+    </div>
+
+    <!-- QUICK LINKS (common) -->
+    <div id="quicklinks"></div>
+
+    <!-- FOOTER (common) -->
+    <div id="footer"></div>
+    
+    <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Outreach – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css"> 
+  <link rel="stylesheet" href="community.css"> 
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- BACKGROUND CONTAINER -->
+  <div class="background-container">
+
+    <!-- COMMUNITY OUTREACH SECTION -->
+    <section>
+      <h2>Community Outreach Programs</h2>
+      <p>At ST. JUDE'S SCHOOL, we believe in giving back to the society and nurturing a sense of social responsibility among our students. Our community outreach programs aim to make a tangible impact in local communities and empower students to become proactive citizens.</p>
+      
+      <h3><u>Key Initiatives</u>:</h3>
+      <ul>
+        <li><strong>Educational Support:</strong> Providing tutoring and mentorship to underprivileged children in nearby communities.</li>
+        <li><strong>Health Awareness Campaigns:</strong> Organizing workshops and awareness drives on hygiene, nutrition, and wellness.</li>
+        <li><strong>Environmental Clean-Up Drives:</strong> Participating in local clean-up projects, tree plantations, and recycling initiatives.</li>
+        <li><strong>Charity & Fundraising:</strong> Organizing charity events, fundraisers, and donation drives to support local NGOs.</li>
+        <li><strong>Student Volunteer Programs:</strong> Encouraging students to volunteer for social service projects to develop empathy and leadership skills.</li>
+      </ul>
+
+      <h3><u>Impact and Recognition</u>:</h3>
+      <p>Our outreach initiatives have positively impacted hundreds of families and students over the years. We have also been recognized by local authorities for our consistent contribution to social welfare and environmental conservation.</p>
+
+      <h3><u>Get Involved</u>:</h3>
+      <p>Students, parents, and staff can participate in ongoing outreach programs. Interested individuals can contact our outreach coordinator for more information or to register for upcoming events.</p>
+   
+   <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+    </section>
+      </div>
+
+    <!-- QUICK LINKS -->
+    <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* COMMON STYLES that are used in every webpage*/
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+
+/* LINKS */
+a {
+  text-decoration: none;
+}
+a:link { color: #0af; }
+a:visited { color: purple; }
+a:hover { color: green; text-decoration: underline; }
+a:active { color: red; }
+
+
+/* HEADER */
+header {
+  background: #003366;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: 12.5px;
+}
+
+header img {
+  height: 150px;
+  width: 150px;
+}
+
+.school-info {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.school-info h1 {
+  margin: 0;
+  font-size: 4em;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.background-container {
+  min-height: 100vh;
+  background: #f5f7fa;
+  position: relative;
+}
+
+
+/* NAVIGATION */
+nav {
+  padding: 20px;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.nav-grid a {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  color: #003366;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.25s;
+}
+
+.nav-grid a:hover {
+  transform: translateY(-5px);
+  background: #eef3ff;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+/* SECTIONS */
+section {
+  background: rgba(255,255,255,0.95);
+  margin: 40px auto;
+  padding: 40px 20px;
+  max-width: 900px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+
+section h2 {
+  color: #003366;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+/* QUICK LINKS and GRID SECTION */
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.quick-links a {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #003366;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s; 
+}
+
+.quick-links a:hover {
+  transform: translateY(-5px);
+  background: #eef3ff;
+}
+
+
+/* FOOTER */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.9em;
+}

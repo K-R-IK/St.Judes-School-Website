@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Lab - ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="computer_lab.css">
+  <link rel="stylesheet" href="common_styles.css">
+  </head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- MAIN CONTENT -->
+  <section class="section-block">
+    <h2>Computer Lab Overview</h2>
+    <p>
+      ST. JUDE'S SCHOOL is equipped with a modern Computer Lab designed to develop digital literacy and 
+      technical skills among students. Our lab fosters practical learning through interactive sessions and
+      advanced computing tools.
+    </p>
+
+    <div class="lab-details">
+      <div class="lab-card">
+        <h3>Lab Equipment</h3>
+        <p>
+          The lab houses high-performance desktop computers, projectors, printers, and interactive whiteboards.
+          All systems are regularly updated with the latest educational software and programming tools.
+        </p>
+      </div>
+      <div class="lab-card">
+        <h3>Learning Programs</h3>
+        <p>
+          Students are trained in coding, digital design, simulations, and IT fundamentals. Age-appropriate
+          software and guided projects help develop problem-solving and critical thinking skills.
+        </p>
+      </div>
+      <div class="lab-card">
+        <h3>Internet & Network</h3>
+        <p>
+          The lab is connected with high-speed internet and secure school network, allowing research,
+          collaborative learning, and online assessments in a safe environment.
+        </p>
+      </div>
+    </div>
+
+    <div class="lab-gallery">
+      <h3>Lab Gallery</h3>
+      <div class="gallery-grid">
+        <img src="computerlab.jpg" alt="Computer Lab Interior">
+        <img src="computerlab(1).jpg" alt="Students Using Computers">
+        <img src="computerlab(7).jpg" alt="Interactive Learning">
+      </div>
+    </div>
+
+    <div class="lab-rules">
+      <h3>Lab Rules & Safety</h3>
+      <ul>
+        <li>Students must handle all equipment carefully.</li>
+        <li>No food or drinks allowed inside the lab.</li>
+        <li>Internet usage is monitored and restricted to educational purposes.</li>
+        <li>Teachers or lab assistants must be present during lab sessions.</li>
+      </ul>
+    </div>
+    
+     <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </section>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>
