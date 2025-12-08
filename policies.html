@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Policies – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css"> 
+  <link rel="stylesheet" href="policies.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- BACKGROUND CONTAINER -->
+  <div class="background-container">
+
+    <!-- SCHOOL POLICIES SECTION -->
+    <section>
+      <h2>School Policies</h2>
+      <p>ST. JUDE'S SCHOOL is committed to creating a safe, inclusive, and productive learning environment. Our policies guide students, staff, and parents to maintain standards of behavior, safety, and academic integrity.</p>
+
+      <h3>1. Academic Policies</h3>
+      <ul>
+        <li><strong>Attendance:</strong> Students are required to maintain at least 90% attendance. Parents must inform the school in case of absences.</li>
+        <li><strong>Examination Rules:</strong> All exams must be attempted honestly; plagiarism or malpractice is strictly prohibited.</li>
+        <li><strong>Homework and Assignments:</strong> Assignments must be submitted on time. Late submissions may incur grade penalties.</li>
+        <li><strong>Promotion Criteria:</strong> Students must meet academic benchmarks to progress to the next grade level.</li>
+      </ul>
+
+      <h3>2. Code of Conduct</h3>
+      <ul>
+        <li><strong>Respect:</strong> Students must respect peers, teachers, staff, and school property.</li>
+        <li><strong>Discipline:</strong> Bullying, harassment, or violence will not be tolerated. Disciplinary measures may include warnings, detention, or suspension.</li>
+        <li><strong>Dress Code:</strong> Students must wear the prescribed school uniform. Proper grooming and hygiene are mandatory.</li>
+      </ul>
+
+      <h3>3. Safety and Security Policies</h3>
+      <ul>
+        <li><strong>Visitor Policy:</strong> All visitors must sign in at the reception and follow safety protocols.</li>
+        <li><strong>Emergency Protocols:</strong> Fire drills and safety evacuations are conducted regularly. Students must follow instructions promptly.</li>
+        <li><strong>Health & Hygiene:</strong> Regular health check-ups and vaccination records are maintained. Students must adhere to hygiene guidelines.</li>
+      </ul>
+
+      <h3>4. Technology and Internet Use</h3>
+      <ul>
+        <li><strong>Acceptable Use:</strong> Students may use school devices and internet access for academic purposes only.</li>
+        <li><strong>Cyber Safety:</strong> Sharing inappropriate content, hacking, or online harassment is strictly prohibited.</li>
+        <li><strong>Monitoring:</strong> The school reserves the right to monitor all device usage on campus.</li>
+      </ul>
+
+      <h3>5. Parent Involvement Policies</h3>
+      <ul>
+        <li><strong>Parent-Teacher Meetings:</strong> Regular meetings are conducted to discuss student progress.</li>
+        <li><strong>Volunteering:</strong> Parents are encouraged to participate in school activities and community events.</li>
+        <li><strong>Feedback:</strong> Suggestions regarding school policies can be submitted through the feedback portal.</li>
+      </ul>
+
+      <h3>6. Grievance Redressal</h3>
+      <p>Students or parents with concerns about school policies or practices may contact the principal or designated staff member. All complaints will be addressed promptly and confidentially.</p>
+    </section>
+    
+      <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+</div>
+    <!-- QUICK LINKS -->
+    <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

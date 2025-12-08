@@ -1,0 +1,87 @@
+/* HOLIDAY HOMEWORK CSS */
+
+.hh-container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Main Heading */
+.hh-container h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #003366;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Introduction */
+.intro-text {
+  text-align: center;
+  font-size: 1.15em;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.6em;
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: 1.8em;
+  color: #003366;
+  margin: 35px 0 15px;
+  border-left: 5px solid #003366;
+  padding-left: 12px;
+}
+
+/* Homework Groups */
+.homework-group {
+  margin-top: 20px;
+}
+
+/* Each Class Block */
+.class-block {
+  background: #f7faff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  border-left: 6px solid #003366;
+}
+
+/* Class Titles */
+.class-block h3 {
+  font-size: 1.5em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+.class-block ul,
+.hh-container ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.class-block ul li,
+.hh-container ul li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  line-height: 1.5em;
+}
+
+/* Download Link Section */
+.download-note {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.download-note a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.download-note a:hover {
+  color: #0055aa;
+}

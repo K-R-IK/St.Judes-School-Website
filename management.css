@@ -1,0 +1,41 @@
+/* management.css*/
+.management-container { 
+  margin: 20px; 
+}
+
+/* Table styling */
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.team-table th {
+  background-color: #e6f0ff;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.team-table td {
+  padding: 8px;
+}
+
+/* Headings */
+h2, h3 {
+  color: #003366;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+/*A small responsive note */
+@media screen and (max-width: 600px) {
+  .school-info h1 {
+    font-size: 2em;
+  }
+  .team-table {
+    font-size: 13px;
+  }
+}

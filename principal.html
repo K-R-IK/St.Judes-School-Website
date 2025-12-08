@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Principal's Message — ST. JUDE'S SCHOOL</title>
+    <link rel="stylesheet" type="text/css" href="common_styles.css">
+    <link rel="stylesheet" type="text/css" href="principal.css">
+</head>
+<body>
+     
+       <!--HEADER-->
+  <div id="header"></div>
+ 
+<div class="background-container">
+  <main class="pm-container">
+    <article class="pm-card">
+
+      <section class="pm-intro">
+        <h1>A Message from the Principal</h1>
+        <p class="pm-subtitle">Committed to character, scholarship, and community.</p>
+
+        <p class="pm-quote">“Education is not preparation for life; education is life itself.”</p>
+
+        <div class="pm-text">
+          <p>Welcome to St. Jude's School. Our mission is to nurture disciplined, curious,
+            and responsible young minds. We uphold a learning culture grounded in tradition
+            while adapting to the needs of the modern world.</p>
+
+          <p>Our academic roadmap emphasizes strong fundamentals and character formation.
+            We believe success is built on consistent effort and values that stand the test of time.</p>
+
+          <p>To our students—show up, stay curious, and do the work. Excellence isn’t a mystery.</p>
+        </div>
+        </section>
+
+      <aside class="pm-aside">
+        <img src="Principal.jpg" alt="Principal" class="pm-photo">
+
+        <div class="pm-signature">Fr. Ramesh Kujur</div>
+        <div class="pm-role">Principal, St. Jude’s School</div>
+
+        <div class="pm-values">
+          <span class="pm-pill">Discipline</span>
+          <span class="pm-pill">Integrity</span>
+          <span class="pm-pill">Academic Rigor</span>
+        </div>
+      </aside>
+
+    </article>
+  </main>
+  <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+ 
+    <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

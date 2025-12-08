@@ -1,0 +1,77 @@
+<!-- library.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>School Library - Rules & Guidelines</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="library.css">
+</head>
+<body>
+     
+       <!--HEADER-->
+  <div id="header"></div>
+ 
+<div class="background-container">
+<body class="library-page">
+
+  <header class="library-header">
+    <div class="container">
+      <h1 class="site-title">SCHOOL LIBRARY</h1>
+      <p class="subtitle">Guidelines for responsible use — please read carefully</p>
+    </div>
+  </header>
+
+  <main class="container library-main" role="main">
+    <section class="rules-card">
+      <h2 class="sr-only">Library Rules</h2>
+      <ol class="library-rules">
+        <li>Strict silence has to be observed in the library at all times.</li>
+        <li>No one is permitted to take a book from the library without the permission of the Librarian and having it duly entered.</li>
+        <li>Books are issued to the use of the borrower and should not be lent to anybody else. Reference books will not be issued.</li>
+        <li>Students should take great care in handling the books. Tearing of pages and pictures from books and magazines is an awfully bad habit which must be avoided at all costs.</li>
+        <li>The attention of the Librarian must be drawn to the books that an intending borrower finds damaged.</li>
+        <li>Damage done to the books and magazines must be made good by the borrower. In case the book is lost the entire cost has to be deposited with the Librarian.</li>
+        <li>Failure to return a book by the due date incurs a fine of Rs. 5 per day for the time the book is overdue.</li>
+        <li>Books and magazines taken out for reference must be placed in the same place from where they were taken.</li>
+        <li>All books must be returned 3 days before the beginning of each examination. Failure to do so will debar the student from appearing at the examination.</li>
+        <li>It is highly recommended that the students take the guidance of the teachers while selecting the books.</li>
+      </ol>
+
+      <div class="callout">
+        <strong>Note:</strong> Please consult the Librarian for issues, suggestions or damaged books.
+      </div>
+      
+            <hr style="margin: 25px 5px;">
+      <p>
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+    </section>
+  </main>
+
+   <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>
+
+   

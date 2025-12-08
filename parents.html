@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Resources - ST. JUDE'S SCHOOL</title>
+
+  <!-- COMMON CSS -->
+  <link rel="stylesheet" href="common_styles.css">
+
+  <!-- PAGE SPECIFIC CSS -->
+  <link rel="stylesheet" href="parents.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- CONTENT AREA -->
+  <div class="pr-container">
+
+    <h1>Parent Resources</h1>
+    <p class="intro-text">
+      A streamlined hub designed to empower parents with timely, accurate, and easy-to-navigate information.
+      This page consolidates key policies, communication channels, academic support, and essential forms.
+    </p>
+
+    <!-- SECTION: Communication Channels -->
+    <h2 class="section-heading">Communication Channels</h2>
+
+    <div class="pr-block">
+      <h3>Parent–Teacher Communication</h3>
+      <ul>
+        <li>Monthly parent–teacher meetings scheduled as per academic calendar.</li>
+        <li>Dedicated email system for academic queries.</li>
+        <li>Teachers respond within 24–48 working hours.</li>
+      </ul>
+
+      <h3>Emergency & Urgent Contact</h3>
+      <ul>
+        <li>School office hours: <strong>7:30 AM – 1:20 PM</strong>.</li>
+        <li>Emergency number available for critical situations.</li>
+        <li>Health updates shared promptly through SMS alerts.</li>
+      </ul>
+    </div>
+
+    <!-- SECTION: Student Support -->
+    <h2 class="section-heading">Student Learning Support</h2>
+
+    <div class="pr-block">
+      <h3>Homework & Study Guides</h3>
+      <ul>
+        <li>Daily homework is given to the student in diary.</li>
+        <li>Revision worksheets available for major subjects.</li>
+        <li>Parents advised to monitor notebooks for personal reminders.</li>
+      </ul>
+</div>
+
+    <!-- SECTION: Policies -->
+    <h2 class="section-heading">Important Policies</h2>
+
+    <div class="pr-block">
+      <h3>Attendance Policy</h3>
+      <ul>
+        <li>Minimum 75% attendance required to appear for annual exams.</li>
+        <li>Medical leave must be supported with documentation.</li>
+        <li>Repeated absenteeism leads to parental counselling.</li>
+      </ul>
+
+      <h3>Discipline Policy</h3>
+      <ul>
+        <li>Zero tolerance for bullying, teasing, or discriminatory conduct.</li>
+        <li>Mobile phones strictly prohibited for students.</li>
+        <li>Parents must reinforce school discipline norms at home.</li>
+      </ul>
+    </div>
+
+    <!-- SECTION: Downloads -->
+    <h2 class="section-heading">Downloadable Forms & Circulars</h2>
+
+    <div class="pr-block">
+      <ul>
+        <li><a href="leave-application.pdf" target="_blank">Leave Application Form</a></li>
+        <li><a href="consent-trip.pdf" target="_blank">Educational Trip Consent Form</a></li>
+        <li><a href="medical-card.pdf" target="_blank">Student Medical Card</a></li>
+        <li><a href="uniform-guidelines.pdf" target="_blank">Uniform Guidelines</a></li>
+      </ul>
+    </div>
+
+    <!-- SECTION: Parent Guidelines -->
+    <h2 class="section-heading">General Guidelines for Parents</h2>
+
+    <div class="pr-block">
+      <ul>
+        <li>Ensure your child arrives at school on time and in proper uniform.</li>
+        <li>Check the diary regularly for notes, homework, and reminders.</li>
+        <li>Avoid sending expensive items or pocket money with students.</li>
+        <li>Promote reading habits at home for language improvement.</li>
+        <li>Support participation in school events and academic programs.</li>
+      </ul>
+    </div>
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

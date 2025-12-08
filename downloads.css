@@ -1,0 +1,75 @@
+/* DOWNLOADS CSS */
+
+/* Page Container */
+.content-area {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Title & Subtitle */
+.page-title {
+  text-align: center;
+  font-size: 2.4em;
+  color: #003366;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.15em;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.6em;
+}
+
+/* Section Blocks */
+.section-block {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 35px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  border-left: 6px solid #003366;
+}
+
+.section-block h2 {
+  font-size: 1.8em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.section-block p {
+  font-size: 1.05em;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Grid for Download Cards */
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Download Card */
+.download-card {
+  background: #eef3ff;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #003366;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: 0.25s;
+  border: 2px solid transparent;
+}
+
+.download-card:hover {
+  transform: translateY(-6px);
+  background: #dce7ff;
+  border-color: #003366;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}

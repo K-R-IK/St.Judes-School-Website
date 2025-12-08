@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css"> 
+  <link rel="stylesheet" href="privacy.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- BACKGROUND CONTAINER -->
+  <div class="background-container">
+
+    <!-- PRIVACY POLICY SECTION -->
+    <section>
+      <h2>Privacy Policy</h2>
+      <p>ST. JUDE'S SCHOOL is committed to protecting the privacy of students, parents, staff, and website visitors. This policy outlines how personal information is collected, used, and safeguarded.</p>
+
+      <h3>1. Information We Collect</h3>
+      <ul>
+        <li><strong>Personal Information:</strong> Names, contact details, date of birth, and other information provided during admission, registration, or communication.</li>
+        <li><strong>Academic Information:</strong> Grades, attendance, performance records, and other educational data.</li>
+        <li><strong>Online Activity:</strong> Data collected through our website forms, cookies, and analytics tools.</li>
+      </ul>
+
+      <h3>2. How We Use Information</h3>
+      <ul>
+        <li>To provide educational services and support student learning.</li>
+        <li>To communicate important school updates, events, and announcements.</li>
+        <li>To improve school services, website functionality, and user experience.</li>
+        <li>To comply with legal requirements and maintain safety on campus.</li>
+      </ul>
+
+      <h3>3. Sharing of Information</h3>
+      <ul>
+        <li>We do not sell, rent, or trade personal information to third parties.</li>
+        <li>Information may be shared with authorized educational or government institutions when required by law.</li>
+        <li>Third-party service providers may access data only for providing services on our behalf, under strict confidentiality agreements.</li>
+      </ul>
+
+      <h3>4. Data Security</h3>
+      <p>We implement technical, administrative, and physical safeguards to protect personal information from unauthorized access, loss, or misuse. Access to sensitive information is restricted to authorized personnel only.</p>
+
+      <h3>5. Cookies and Tracking</h3>
+      <p>Our website uses cookies and analytics tools to monitor website performance, traffic patterns, and user preferences. This information is used solely to enhance the user experience.</p>
+
+      <h3>6. User Rights</h3>
+      <ul>
+        <li>Individuals may request access to their personal information maintained by the school.</li>
+        <li>Requests for correction or deletion of personal data can be submitted to our data privacy officer.</li>
+        <li>Users may opt-out of marketing communications or newsletters at any time.</li>
+      </ul>
+
+      <h3>7. Policy Updates</h3>
+      <p>ST. JUDE'S SCHOOL may update this Privacy Policy periodically. Users are encouraged to review this page regularly for the latest information.</p>
+
+      <h3>Contact Us</h3>
+      <p>For privacy-related questions or concerns, please contact our Data Privacy Officer at <a href="mailto:privacy@stjudesschool.edu">privacy@stjudesschool.edu</a> </p>
+    
+    <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+    </section>
+      </div>
+
+    <!-- QUICK LINKS -->
+    <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

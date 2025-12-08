@@ -1,0 +1,117 @@
+/* faculty.css - topic-specific styles only */
+*{
+     text-align: center;
+}
+.hero {
+  background: orange;
+}
+
+/* Callout (important note) */
+.callout{
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #0f5fe6;
+  background: rgba(15,95,230,0.04);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+/* Table styling */
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.team-table th {
+  background-color: #e6f0ff;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.team-table td {
+  padding: 8px;
+}
+
+
+.detailed-description {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f0f4ff;
+  border-radius: 10px;
+}
+
+/* Headings */
+h2, h3, h4 {
+  color: #003366;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Table styling for Faculty page */
+
+.faculty-table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;       /* center table */
+  border-collapse: collapse;
+  background-color: #f0f4ff;
+  border-radius: 10px;
+  overflow: hidden;        /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+
+.faculty-table th, .faculty-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.faculty-table th {
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+}
+
+.faculty-table tr:nth-child(even) {
+  background-color: #e6ecff;
+}
+
+.faculty-table tr:hover {
+  background-color: #cce0ff;
+  cursor: pointer;   /* indicates clickable */
+  transition: 0.3s;
+}
+
+.faculty-table a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.faculty-table a:hover {
+  text-decoration: underline;
+  color: #0a4fff;
+}
+
+
+/* Detailed description paragraphs */
+.detailed-description p {
+  text-align: left;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+  font-size: 14px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer; /* indicates clickable for double-click */
+}
+
+/* Targeted paragraph animation */
+.detailed-description p:target {
+  transform: translateY(-5px);   /* Moves up slightly */
+  background-color: #d0e1ff;     /* Highlight background */
+  padding: 8px;
+  border-radius: 5px;
+  align-items: center;
+}

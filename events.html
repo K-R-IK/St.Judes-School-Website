@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Celebrations – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="events.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content-area">
+
+    <h1 class="page-title">Events & Celebrations</h1>
+    <p class="page-subtitle">
+      Cultivating school spirit through meaningful experiences, cultural moments, and student-led initiatives.
+    </p>
+
+    <!-- OVERVIEW -->
+    <section class="section-block">
+      <h2>Overview</h2>
+      <p>
+        ST. JUDE’S SCHOOL believes that true education extends beyond classrooms.  
+        Our events and celebrations offer platforms for creativity, leadership, confidence,
+        and cultural appreciation. Every program is structured to strengthen community bonds
+        and encourage holistic development.
+      </p>
+    </section>
+
+    <!-- ANNUAL EVENTS SECTION -->
+    <section class="section-block">
+      <h2>Major Annual School Events</h2>
+      <p>
+        These flagship events showcase student talent and institutional excellence:
+      </p>
+
+      <ul class="feature-list">
+        <li>✔ <strong>Annual Day Celebration</strong> – Performances, awards, cultural showcases.</li>
+        <li>✔ <strong>Sports Day</strong> – Athletics, team events, marching display.</li>
+        <li>✔ <strong>Founders’ Day</strong> – Honoring our heritage and values.</li>
+        <li>✔ <strong>Exhibition Week</strong> – Science, art, literature and thematic displays.</li>
+        <li>✔ <strong>Investiture Ceremony</strong> – Appointment of school leaders and prefects.</li>
+        <li>✔ <strong>Graduation Ceremony</strong> – Farewell for passing-out batches.</li>
+      </ul>
+    </section>
+
+    <!-- FESTIVAL CELEBRATIONS -->
+    <section class="section-block">
+      <h2>Cultural & Festival Celebrations</h2>
+      <p>
+        Celebrating India’s cultural diversity is a core part of our identity.  
+        Students are encouraged to participate actively and responsibly.
+      </p>
+
+      <ul class="feature-list">
+        <li>✔ Independence Day</li>
+        <li>✔ Republic Day</li>
+        <li>✔ Teacher’s Day</li>
+        <li>✔ Children’s Day</li>
+        <li>✔ Diwali, Christmas, Eid & other key festivals</li>
+      </ul>
+    </section>
+
+    <!-- STUDENT-LED EVENTS -->
+    <section class="section-block">
+      <h2>Student-Led Initiatives</h2>
+      <p>
+        We empower students by giving them ownership of events, enhancing confidence 
+        and teamwork.
+      </p>
+
+      <ul class="feature-list">
+        <li>✔ Club Events & Intra-school Competitions</li>
+        <li>✔ Debate, Quiz & Elocution Days</li>
+        <li>✔ Swachh Bharat Week & Eco Drives</li>
+        <li>✔ Morning Assemblies Led by Houses</li>
+      </ul>
+    </section>
+
+    <!-- EVENT MANAGEMENT -->
+    <section class="section-block">
+      <h2>Event Planning & Management</h2>
+      <p>
+        Every event follows a structured planning process involving students, teachers, 
+        coordinators, and administration. Safety, discipline, and inclusivity remain top priorities.
+      </p>
+
+      <ol class="rules-list">
+        <li>Event proposals are reviewed and approved by administration.</li>
+        <li>Students are briefed on guidelines and responsibilities.</li>
+        <li>Teachers monitor rehearsals and preparation schedules.</li>
+        <li>Safety checks and emergency protocols are executed before the event.</li>
+      </ol>
+    </section>
+
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

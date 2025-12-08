@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Structure – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="fee_structure.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="content-area">
+
+    <h1 class="page-title">Fee Structure (2025–26)</h1>
+    <p class="page-subtitle">A transparent breakdown of the annual fee model</p>
+
+    <div class="table-container">
+
+      <table class="fee-table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Admission Fee (₹)</th>
+            <th>Monthly Fee (₹)</th>
+            <th>Examination Fee (₹)</th>
+            <th>Whole Year Fee (₹)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>I – V</td>
+            <td>10000.00</td>
+            <td>2440.00</td>
+            <td>60.00</td>
+            <td>25000.00</td>
+          </tr>
+
+          <tr>
+            <td>VI – VIII</td>
+            <td>12000.00</td>
+            <td>3140.00</td>
+            <td>60.00</td>
+            <td>32000.00</td>
+          </tr>
+
+          <tr>
+            <td>IX – X</td>
+            <td>12000.00</td>
+            <td>3340.00</td>
+            <td>60.00</td>
+            <td>34000.00</td>
+          </tr>
+
+          <tr>
+            <td>XI – XII (Commerce)</td>
+            <td>12000.00</td>
+            <td>3540.00</td>
+            <td>60.00</td>
+            <td>36000.00</td>
+          </tr>
+
+          <tr>
+            <td>XI – XII (Science)</td>
+            <td>12000.00</td>
+            <td>3740.00</td>
+            <td>60.00</td>
+            <td>38000.00</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+  </main>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <!-- JS LOADER -->
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>School Anthem — St. Jude's</title>
+ <link rel="stylesheet" type="text/css" href="common_styles.css">
+    <link rel="stylesheet" type="text/css" href="school_anthem.css">
+
+</head>
+<body>
+
+   <!--HEADER-->
+  <div id="header"></div>
+  
+<div class="background-container">
+<main class="container">
+    <header class="anthem-header">
+      <h1 class="anthem-title">School Anthem</h1>
+      <p class="anthem-subtitle">-St.Jude's School</p>
+    </header>
+
+    <article class="anthem">
+      <section class="stanza">
+        <p><b><u>Common Stanza</u>:</p><br>
+        <br><p>Enter to learn, leave to serve<br>
+        This motto we hold high<br>
+        With knowledge as our guiding light<br>
+        We reach for the sky.</b></p><br>
+        <hr>
+        <p><b>Note:</b> Repeat it after every Stanza</p>
+      </section>
+
+      <section class="stanza">
+           <p><b><u>Stanza 1</u>:</b></p><br>
+         <p>Saint Jude’s students we are from the city of Lucknow.<br>
+        Patron of our lives we honor you and vow<br>
+        To remain loyal, steadfast and true<br>
+        Guided by your light in all we pursue.</p>
+      </section>
+
+      <section class="stanza">
+           <p><b><u>Stanza 2</u>:</b></p><br>
+        <p>St. Jude our patron we honor and pray<br>
+        Bless us and guide us day by day<br>
+        In this school we find our way<br>
+        Shaping hearts and minds to pave the nation’s way.</p>
+      </section>
+
+      <section class="stanza">
+           <p><b><u>Stanza 3</u>:</b></p><br>
+        <p>Our school moulds our life so bright<br>
+        It shapes our minds and hearts alight<br>
+        For service to the nation we stand so proud<br>
+        With Alma Mater’s love<br>
+        Our hearts are endowed.</p>
+      </section>
+
+      <section class="stanza">
+           <p><b><u>Stanza 4</u>:</b></p><br>
+        <p>Striving for excellence in all we do<br>
+        With true knowledge our dreams come through<br>
+        Like candlelight a path is bright<br>
+        Every day we climb to a greater height.</p>
+      </section>
+
+      <section class="stanza">
+           <p><b><u>Stanza 5</u>:</b></p><br>
+        <p>Inspiring us to live the dream<br>
+        St. Jude is the light that beams<br>
+        For it's the reason we stand today<br>
+        Grateful for the journey along the way.</p>
+      </section>
+      <section>
+           <h2><u>School Anthem</u></h2><br>
+           <h3><u>Audio</u>:</h3>
+           <audio controls>
+                <source src="School_Anthem.mp3" type="audio/mp3">
+                </audio><br><br>
+                           <h3><u>PDF</u>:</h3>
+                <a href="school_anthem_lyrics.pdf" target="_blank" style="font-weight:bold;">VIEW LYRICS....</a>
+      </section>
+    </article>
+ <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+    
+     <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* EVENTS CSS */
+
+/* Page Title */
+.page-title {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.page-subtitle {
+  text-align: center;
+  font-size: 1.15em;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Section Wrapper */
+.section-block {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px 25px;
+  margin-bottom: 35px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+/* Section Heading */
+.section-block h2 {
+  color: #003366;
+  font-size: 1.7em;
+  margin-bottom: 12px;
+  border-left: 5px solid #003366;
+  padding-left: 12px;
+}
+
+/* Feature List */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.feature-list li {
+  background: #eef3ff;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 1.05em;
+  line-height: 1.5em;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  border-left: 4px solid #003366;
+}
+
+/* Numbered Rules */
+.rules-list {
+  margin-left: 20px;
+  font-size: 1.05em;
+}
+
+.rules-list li {
+  margin-bottom: 12px;
+  line-height: 1.5em;
+}
+
+/* Buttons / Gallery Link */
+.pdf-button {
+  display: inline-block;
+  background: #003366;
+  color: #fff !important;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: 0.25s;
+}
+
+.pdf-button:hover {
+  background: #0055aa;
+  transform: translateY(-3px);
+}
+
+/* Content Wrapper */
+.content-area {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}

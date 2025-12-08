@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum - ST. JUDE'S SCHOOL</title>
+
+  <!-- COMMON CSS -->
+  <link rel="stylesheet" href="common_styles.css">
+
+  <!-- PAGE SPECIFIC CSS -->
+  <link rel="stylesheet" href="curriculum.css">
+</head>
+
+<body>
+       <!-- HEADER -->
+  <div id="header"></div>
+  
+<div class="background-container">
+<!-- MAIN CONTENT -->
+  <section>
+    <h2>Curriculum Framework</h2>
+
+    <p class="intro-text">
+      Our curriculum is systematically engineered to ensure long-term academic throughput.
+      We blend traditional teaching values with forward-facing educational strategies, ensuring
+      every learner gets a structured, predictable, and high-impact growth trajectory.
+    </p>
+
+    <!-- FOUNDATION STAGE -->
+    <div class="curriculum-block">
+      <h3>Foundation Stage (Classes I – V)</h3>
+      <p>
+        The foundation cycle focuses on literacy, numeracy, and concept clarity. Learning is
+        activity-driven but rooted in discipline and structured reinforcement. Core emphasis:
+      </p>
+      <ul class="core-list">
+        <li>Strong reading & language formation</li>
+        <li>Basic mathematical reasoning</li>
+        <li>Environmental awareness</li>
+        <li>Art-integrated learning</li>
+        <li>Foundational computer skills</li>
+        <li>Habit and value-building</li>
+      </ul>
+    </div>
+
+    <!-- MIDDLE STAGE -->
+    <div class="curriculum-block">
+      <h3>Middle Stage (Classes VI – VIII)</h3>
+      <p>
+        The middle cycle expands subject depth and moves toward application-based learning.
+        Students are exposed to scientific thinking, structured writing, and multi-disciplinary
+        problem solving.
+      </p>
+      <ul class="core-list">
+        <li>Advanced grammar & composition</li>
+        <li>Robust scientific experiments</li>
+        <li>Geography + Civics integration</li>
+        <li>IT literacy & digital basics</li>
+        <li>Logical & analytical reasoning</li>
+      </ul>
+    </div>
+
+    <!-- SECONDARY -->
+    <div class="curriculum-block">
+      <h3>Secondary Stage (Classes IX – X)</h3>
+      <p>
+        Here the curriculum is aligned to board examination expectations. The teaching model
+        prioritizes clarity, revision cycles, structured assignments, and milestone-based performance tracking.
+      </p>
+      <ul class="core-list">
+        <li>Formal lab-based science</li>
+        <li>Mapped chapter-deliverables per term</li>
+        <li>Assessment cycles based on board protocols</li>
+        <li>IT, arts, PE, and skill subjects</li>
+        <li>High-intensity revision methodology</li>
+      </ul>
+    </div>
+
+    <!-- SENIOR SECONDARY -->
+    <div class="curriculum-block">
+      <h3>Senior Secondary Stage (Classes XI – XII)</h3>
+      <p>
+        The final stage is specialization-driven. Students choose defined streams, allowing deeper
+        mastery of chosen domains while maintaining strong academic discipline.
+      </p>
+
+      <div class="stream-set">
+
+        <div class="stream-card">
+          <h4><u>Science Stream</u></h4>
+          <ul>
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>Mathematics / Biology</li>
+            <li>English</li>
+            <li>Computer Science / PE</li>
+          </ul>
+        </div>
+
+        <div class="stream-card">
+          <h4><u>Commerce Stream</u></h4>
+          <ul>
+            <li>Accountancy</li>
+            <li>Business Studies</li>
+            <li>Economics</li>
+            <li>English</li>
+            <li>Applied Mathematics / PE</li>
+          </ul>
+        </div>
+
+        <div class="stream-card">
+          <h4><u>Humanities Stream</u></h4>
+          <ul>
+            <li>Political Science</li>
+            <li>History</li>
+            <li>Geography</li>
+            <li>Psychology</li>
+            <li>English</li><br>
+            <strong>Note</strong>:<u>Not Available in this School</u>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PEDAGOGICAL APPROACH -->
+    <div class="curriculum-block">
+      <h3>Pedagogical Approach</h3>
+      <p>
+        Our teaching model is a disciplined hybrid: traditional chalk-and-talk for clarity,
+        supported by digital tools for engagement. Practical learning, peer interaction,
+        structured assignments, and monthly diagnostic evaluations keep academic delivery predictable
+        and effective.
+      </p>
+    </div>
+
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </section>
+
+  <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

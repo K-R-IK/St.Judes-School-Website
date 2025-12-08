@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="terms.css"> 
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- BACKGROUND CONTAINER -->
+  <div class="background-container">
+
+    <!-- TERMS & CONDITIONS SECTION -->
+    <section>
+      <h2>Terms & Conditions</h2>
+      <p>Welcome to ST. JUDE'S SCHOOL website. By accessing or using this website, you agree to comply with and be bound by the following terms and conditions. Please read them carefully before using our services.</p>
+
+      <h3>1. Use of Website</h3>
+      <ul>
+        <li>You agree to use the website for lawful purposes only.</li>
+        <li>Unauthorized use of the website may give rise to a claim for damages or be a criminal offense.</li>
+        <li>You must not use the website to transmit harmful, offensive, or illegal content.</li>
+      </ul>
+
+      <h3>2. Intellectual Property</h3>
+      <ul>
+        <li>All content on this website, including text, images, logos, and design, is the property of ST. JUDE'S SCHOOL or its licensors.</li>
+        <li>Reproduction, distribution, or modification of any content without permission is strictly prohibited.</li>
+      </ul>
+
+      <h3>3. User Accounts</h3>
+      <ul>
+        <li>If any section of the website requires account registration, you are responsible for maintaining the confidentiality of your account credentials.</li>
+        <li>You agree to notify the school immediately of any unauthorized use of your account.</li>
+      </ul>
+
+      <h3>4. Limitation of Liability</h3>
+      <p>ST. JUDE'S SCHOOL shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of the website, including errors, omissions, or interruptions.</p>
+
+      <h3>5. Links to Third-Party Websites</h3>
+      <p>The website may contain links to third-party websites. ST. JUDE'S SCHOOL does not control these websites and is not responsible for their content, privacy policies, or practices.</p>
+
+      <h3>6. Privacy</h3>
+      <p>Any personal information collected on the website will be handled according to our <a href="privacy.html">Privacy Policy</a>.</p>
+
+      <h3>7. Changes to Terms</h3>
+      <p>ST. JUDE'S SCHOOL reserves the right to modify or update these terms at any time. Continued use of the website constitutes acceptance of the revised terms.</p>
+
+      <h3>8. Governing Law</h3>
+      <p>These terms and conditions are governed by the laws of India. Any disputes will be subject to the jurisdiction of Indian courts.</p>
+
+      <h3>Contact Information</h3>
+      <p>For any questions regarding these Terms & Conditions, please contact us at <a href="mailto:info@stjudesschool.edu">info@stjudesschool.edu</a></p>
+      
+       <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+    </section>
+  </div>
+
+    <!-- QUICK LINKS -->
+    <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+  
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Admission Form Styles */
+
+/* Intro Section */
+.admission-intro {
+  padding: 30px;
+  background: #e8eef5;
+  border-left: 6px solid #003366;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.admission-intro h2 {
+  margin-bottom: 10px;
+}
+
+/* Form Section */
+.admission-form-section {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admission-form {
+  display: grid;
+  gap: 20px;
+}
+
+h2{
+     text-align: center;
+}
+/* Form Controls */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Submit Button */
+.btn-submit {
+  padding: 12px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-submit:hover {
+  background: #005599;
+}

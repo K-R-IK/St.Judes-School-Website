@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics Overview - ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="academics.css">
+</head>
+
+<body>
+<div class="background-container">
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- MAIN CONTENT -->
+  <section>
+    <h2><u>Academics Overview</u></h2>
+    <p class="intro-text">
+      Our academic framework blends traditional discipline with modern pedagogical excellence.  
+      The objective is simple: build foundational strength while enabling future-ready competencies.
+    </p>
+
+    <div class="academic-grid">
+      
+      <!-- INTRODUCTION -->
+<p>
+  Our academic program is built on a disciplined, structured framework that blends traditional teaching values with modern educational practices. The goal is simple and measurable: provide every student with strong foundational knowledge, practical skills, and a learning environment that encourages curiosity, responsibility, and long-term growth. Our approach focuses on academic excellence while nurturing character, confidence, and well-rounded development.</p>
+  </div>
+
+ <div class="academic-card">
+<h3>Holistic Learning</h3>
+<p>
+  Education at our school extends far beyond textbooks. Holistic learning ensures students grow intellectually, emotionally, socially, and physically. Classroom learning is balanced with arts, sports, value-based activities, and co-curricular programs. This approach builds confidence, leadership qualities, empathy, resilience, and a sense of responsibility. Students develop not just as good learners but as capable individuals ready to face real-world challenges.</p>
+  </div>
+  
+ <div class="academic-card">
+<h3>Structured Curriculum</h3>
+<p>
+  Our curriculum follows a clear and progressive structure designed to build understanding step by step. Each academic stage prepares students for the next, ensuring no gaps in learning.  
+  <br><br>
+  <strong><u>Foundation Stage</u>:</strong> Focus on basic concepts, language development, motor skills, and number sense.  
+  <br>
+  <strong><u>Middle Stage</u>:</strong> Emphasis on application-based learning, logical reasoning, and project-oriented activities.  
+  <br>
+  <strong><u>Senior Stage</u>:</strong> Streamlined academic pathways with strong focus on board exam preparation and subject specialization.  
+  <br><br>
+  This model respects traditional discipline while integrating smart-class tools, visual learning aids, and activity-based teaching to ensure clarity and engagement.
+</p>
+</div>
+
+ <div class="academic-card">
+<h3>Continuous Evaluation</h3>
+<p>
+  To avoid last-minute pressure and encourage consistent learning, we follow a continuous evaluation system. Students are assessed through:  
+  <br>
+  – Formative assessments<br>
+  – Practical work and projects<br>  
+  – Notebook checks<br>  
+  – Periodic written tests<br> 
+  – Daily classroom performance<br>  
+  <br><br>
+  This helps identify strengths early, address learning gaps quickly, and promote a steady academic growth pattern instead of one-time performance spikes.
+</p>
+</div>
+
+ <div class="academic-card">
+<h3>Skill-Based Education</h3>
+<p>
+  Today’s world demands more than theoretical knowledge. Our academic design builds essential life skills through every subject and activity.  
+  <br>
+  – Critical Thinking<br>  
+  – Communication Skills<br> 
+  – Creativity and Innovation<br>  
+  – Digital Literacy<br>  
+  <br><br>
+  Students learn to analyse, express, create, and use technology responsibly. This ensures they stay competitive in a rapidly changing world while remaining grounded in strong values and discipline.
+</p>
+</div>
+  
+    <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+  
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

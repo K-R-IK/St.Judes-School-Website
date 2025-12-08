@@ -1,0 +1,131 @@
+/* discipline.css */
+
+/* Root token for easy tuning */
+:root{
+  --maxw: 980px;
+  --accent: #0b67b2;     /* conservative blue */
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --card: #fbfdff;
+  --radius: 12px;
+}
+
+/* Container aligns with common layout but scoped */
+.gd-container{
+  max-width: var(--maxw);
+  margin: 1.25rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Header */
+.gd-header{
+  background: linear-gradient(90deg, rgba(11,103,178,0.06), rgba(11,103,178,0.02));
+  border-left: 4px solid var(--accent);
+  padding: 1.2rem 0.75rem;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(9,30,66,0.04);
+}
+.gd-title{
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.6px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.gd-sub{
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Main layout */
+.gd-main{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* TOC */
+.gd-toc details{
+  background: var(--card);
+  border-radius: 8px;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid rgba(11,103,178,0.06);
+}
+.gd-toc summary{
+  font-weight: 600;
+  cursor: pointer;
+}
+.gd-toc ol{ margin: 0.5rem 0 0 1.1rem; color: var(--muted); }
+
+/* Content card */
+.gd-content{
+  background: var(--bg);
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 6px 24px rgba(16,24,40,0.02);
+}
+
+/* Rules list styling */
+.gd-rules{
+  margin: 0;
+  padding-left: 1.05rem;
+  counter-reset: rule;
+}
+.gd-rules > li{
+  margin: 0.9rem 0;
+  line-height: 1.55;
+  font-size: 1rem;
+  color: #222;
+  position: relative;
+  padding-left: 0.4rem;
+}
+
+/* Emphasize important notes inside an item */
+.gd-note{
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  background: linear-gradient(180deg, rgba(11,103,178,0.03), rgba(11,103,178,0.01));
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  color: #14385a;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.gd-footer{
+  margin-top: 1rem;
+  padding: 0.9rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+  background-color: orange;
+}
+
+/* Accessibility helpers */
+.sr-only{
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+/* Print rules — make it neat for a handout */
+@media print {
+  body, .gd-container { background: #fff; color: #000; }
+  .gd-header, .gd-toc, .gd-note { box-shadow: none; background: none; border: none; }
+  .gd-container { max-width: 100%; padding: 0; }
+  a::after { content: " (" attr(href) ")"; font-size: 0.9em; }
+}
+
+/* Small screens — keep text readable */
+@media (max-width:600px){
+  .gd-title{ font-size: 1.25rem; }
+  .gd-rules > li{ font-size: 0.98rem; }
+  .gd-container{ padding: 0 0.8rem; }
+}

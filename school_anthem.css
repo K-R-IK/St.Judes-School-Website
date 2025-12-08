@@ -1,0 +1,62 @@
+/* School anthem css */
+
+.container {
+  max-width: 900px;
+  margin: 36px auto;
+  padding: 20px;
+}
+
+.anthem-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.anthem-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.anthem {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.stanza + .stanza {
+  margin-top: 16px;
+}
+
+.stanza p {
+  margin: 0;
+  line-height: 0.8;
+  font-size: 18px;
+  white-space: pre-line;
+}
+
+/* Footer controls */
+.anthem-footer {
+  margin-top: 16px;
+  text-align: right;
+  background-color: white;
+}
+
+.print-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Print-friendly tweaks */
+@media print {
+  body { background: #fff; }
+  .container { box-shadow: none; margin: 0; padding: 0; max-width: none; }
+  .print-btn { display: none; }
+}

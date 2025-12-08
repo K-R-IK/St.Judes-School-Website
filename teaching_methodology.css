@@ -1,0 +1,54 @@
+/* Page Header */
+.tm-header {
+  text-align: center;
+  padding: 20px 15px;
+  background: #ffffff;
+}
+
+.tm-header h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: Orange;
+}
+
+.tm-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Container */
+.tm-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.tm-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tm-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.tm-card p {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Hover Effect */
+.tm-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}

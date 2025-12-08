@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching Methodologies</title>
+  <link rel="stylesheet" type="text/css" href="teaching_methodology.css">
+ <link rel="stylesheet" type="text/css" href="common_styles.css">
+</head>
+<body>
+     
+        <!--HEADER-->
+  <div id="header"></div>
+  
+<div class="background-container">
+  <header class="tm-header">
+    <h3><u>Teaching Methodologies</u>:</h3><br>
+    <p><u>Balanced, proven, and built for real learning.</u></p>
+  </header>
+
+  <section class="tm-container">
+
+    <div class="tm-card">
+      <h2><u>Activity-Based Learning</u>:</h2>
+      <p>Hands-on tasks, experiments, and simple challenges help students learn by doing — not just listening.</p>
+    </div>
+
+    <div class="tm-card">
+      <h2><u>Concept-First Approach</u>:</h2>
+      <p>We focus on understanding the “why” behind every topic, so students build a strong foundation rather than memorizing.</p>
+    </div>
+
+    <div class="tm-card">
+      <h2><u>Interactive Classrooms</u>:</h2>
+      <p>Discussions, group work, and real-world examples keep lessons lively and relatable.</p>
+    </div>
+
+    <div class="tm-card">
+      <h2><u>Technology Integration</u>:</h2>
+      <p>Digital tools, videos, and smart-class elements reinforce learning without overwhelming students.</p>
+    </div>
+
+    <div class="tm-card">
+      <h2><u>Personalized Support</u>:</h2>
+      <p>Teachers track each student’s progress and adjust teaching to match their learning pace.</p>
+    </div>
+
+    <div class="tm-card">
+      <h2><u>Value-Based Education</u>:</h2>
+      <p>We blend academics with discipline, respect, teamwork, and traditional values — the fundamentals that never go out of style.</p>
+    </div>
+    
+      <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+  </section>
+ 
+  <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+/*CURRICULUM CSS */
+
+.intro-text {
+  font-size: 1.15em;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.curriculum-block {
+  background: #ffffff;
+  padding: 25px;
+  margin-top: 35px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.curriculum-block h3 {
+  color: #003366;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.core-list {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 1.7;
+  color: #444;
+  font-size: 1.05em;
+}
+
+.core-list li {
+  margin-bottom: 6px;
+}
+
+/* Stream Section */
+.stream-set {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.stream-card {
+  background: #f9faff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stream-card h4 {
+  font-size: 1.25em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.stream-card ul {
+  padding-left: 18px;
+  line-height: 1.7;
+  font-size: 1.05em;
+  color: #444;
+}

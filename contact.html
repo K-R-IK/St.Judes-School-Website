@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="common_styles.css">
+    <link rel="stylesheet" type="text/css" href="disclaimer.css">
+</head>
+<body>
+     
+      <!--HEADER-->
+  <div id="header"></div>
+  
+<div class="background-container">
+    <main class="contact-container">>
+        <section class="info-box">
+               <h1><u>Contact Us</u>:</h1>
+               <br>
+            <h2><u>School Information</u></h2>
+ <p><strong>Address:</strong>  St Jude's School, Raibareilly Road, Mohanlalganj-PO, Lucknow, Up-226301</p>
+       <p><strong>Phone:</strong> <a href="tel:+91-9918377504" style="color:#0af;">+91-9918377504</a></p>
+<p><strong>Email:</strong> <a href="mailto:judeschool18@gmail.com" style="color:#0af;">judeschool18@gmail.com</a> </p>
+            <p><strong>Office Hours:</strong> Mon–Sat, 7:50 AM – 1:45 PM</p>
+        </section>
+
+        <section class="form-box">
+            <h2><u>Send Us a Message</u>:</h2>
+               <br>
+            <form>
+                <label>Name</label>
+                <input type="text" required><br><br>
+
+                <label>Email</label>
+                <input type="email" required><br><br>
+
+                <label>Subject</label>
+                <input type="text" required><br><br>
+
+                <label>Message</label>
+                <textarea rows="5" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+            <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+  
+        </section>
+    </main>
+    
+    <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+  </div>
+</body>
+</html>

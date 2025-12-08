@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback & Suggestions – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css"> 
+  <link rel="stylesheet" href="feedback.css"> 
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- BACKGROUND CONTAINER -->
+  <div class="background-container">
+
+    <!-- FEEDBACK SECTION -->
+    <section>
+      <h2>Feedback & Suggestions</h2>
+      <p>ST. JUDE'S SCHOOL values your input. We believe that constructive feedback and thoughtful suggestions help us improve our academic environment, teaching standards, and overall school experience. Your voice matters!</p>
+
+      <h3>How to Provide Feedback</h3>
+      <ul>
+        <li><strong>Students:</strong> You can submit feedback regarding classes, teaching methods, facilities, or extracurricular activities.</li>
+        <li><strong>Parents:</strong> Provide feedback on school policies, communication, and support services.</li>
+        <li><strong>Staff:</strong> Share suggestions to improve operational efficiency, student engagement, and learning resources.</li>
+      </ul>
+
+      <h3>Feedback Submission Form</h3>
+      <form action="submit-feedback.php" method="POST">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Your full name"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+        <label for="role">Role:</label><br>
+        <select id="role" name="role" required>
+          <option value="">Select your role</option>
+          <option value="student">Student</option>
+          <option value="parent">Parent</option>
+          <option value="staff">Staff</option>
+        </select><br><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" required>
+          <option value="">Select category</option>
+          <option value="academics">Academics</option>
+          <option value="facilities">Facilities</option>
+          <option value="extracurricular">Extracurricular Activities</option>
+          <option value="policies">School Policies</option>
+          <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="message">Feedback / Suggestions:</label><br>
+        <textarea id="message" name="message" rows="6" required placeholder="Write your feedback here..."></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+
+      <h3>Contact Information</h3>
+      <p>Alternatively, you can reach out to our feedback coordinator at <a href="mailto:feedback@stjudesschool.edu">feedback@stjudesschool.edu</a> </p>
+    </section>
+
+    <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </div>
+  
+  <!-- QUICK LINKS -->
+    <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+</body>
+</html>

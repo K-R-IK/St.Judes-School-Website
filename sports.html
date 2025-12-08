@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Facilities - ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="sports.css"> 
+  <link rel="stylesheet" href="common_styles.css"> 
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- MAIN CONTENT -->
+  <section class="section-block">
+    <h2>Sports Facilities Overview</h2>
+    <p>
+      ST. JUDE'S SCHOOL provides a comprehensive sports program to encourage physical fitness, teamwork, and discipline.
+      Our sports facilities are designed for both competitive and recreational activities, catering to students of all ages.
+    </p>
+
+    <div class="sports-grid">
+      <div class="sport-card">
+        <h3>Football & Soccer</h3>
+        <p>
+          Our well-maintained football fields allow students to practice and compete at local and inter-school tournaments.
+          Coaches provide professional training focusing on skill development and sportsmanship.
+        </p>
+      </div>
+      <div class="sport-card">
+        <h3>Basketball & Volleyball</h3>
+        <p>
+          Indoor and outdoor courts are available for basketball and volleyball practice. Teams are formed to participate
+          in school leagues and regional competitions.
+        </p>
+      </div>
+      <div class="sport-card">
+        <h3>Track & Field</h3>
+        <p>
+          The athletics track and field area supports running, jumping, and throwing events. Students are trained in
+          sprints, long-distance running, relays, and athletic fitness routines.
+        </p>
+      </div>
+      <div class="sport-card">
+        <h3>Cricket</h3>
+        <p>
+          The school has a spacious cricket ground with proper pitches and practice nets. Students are trained in batting,
+          bowling, fielding, and game strategies. Regular matches and tournaments are organized to develop teamwork
+          and competitive spirit.
+        </p>
+      </div>
+    </div>
+
+    <div class="sports-gallery">
+      <h3>Sports Gallery</h3>
+      <div class="gallery-grid">
+        <img src="playground(4).jpg" alt="sports">
+        <img src="playground(5).jpg" alt="sports">
+        <img src="playground(3).jpg" alt="sports">
+        <img src="playground.jpg" alt="sports">
+      </div>
+    </div>
+
+    <div class="sports-rules">
+      <h3>Sports Guidelines & Safety</h3>
+      <ul>
+        <li>All students must wear proper sports attire and footwear.</li>
+        <li>Safety equipment must be used where required (helmets, guards, etc.).</li>
+        <li>Follow coach instructions during training and games.</li>
+        <li>Respect all participants and maintain fair play.</li>
+      </ul>
+    </div>
+    
+         <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </section>
+
+  <!-- QUICK LINKS -->
+  <div id="quick-links"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

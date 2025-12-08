@@ -1,0 +1,87 @@
+/*PRINCIPAL'S MESSEGE STYLES*/
+
+.pm-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.pm-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+}
+
+@media (max-width: 850px) {
+  .pm-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pm-intro h1 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.pm-subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.pm-quote {
+  margin: 20px 0;
+  padding-left: 16px;
+  border-left: 4px solid #0a6efd;
+  color: #0a4b8c;
+  font-style: italic;
+}
+
+.pm-text {
+  line-height: 1.6;
+  color: #333;
+}
+
+.pm-aside {
+  text-align: center;
+}
+
+.pm-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  margin-bottom: 12px;
+}
+
+.pm-signature {
+  font-size: 20px;
+  color: #003366;
+  font-weight: bold;
+}
+
+.pm-role {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.pm-values {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.pm-pill {
+  background: #e6f0ff;
+  color: #003366;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}

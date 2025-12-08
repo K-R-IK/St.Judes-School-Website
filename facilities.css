@@ -1,0 +1,73 @@
+/* FACILITIES PAGE STYLING */
+
+/* Facility Card */
+.facility {
+  background: white;
+  margin: 25px 0;
+  padding: 20px;
+  border-left: 6px solid #003366;
+  border-radius: 8px;
+  text-align: left; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Number Badge */
+.facility-number {
+  width: 45px;
+  height: 45px;
+  background: #003366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+/* Titles inside each card */
+.facility p strong {
+  color: #003366;
+  font-size: 1.1em;
+}
+
+/* Suggested image/video preview blocks */
+.facility img,
+.facility video {
+  margin-top: 15px;
+  width: 20%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #003366
+  float: left;
+}
+
+/* Section paragraph refinement */
+section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Facility container spacing */
+.facility:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/* Responsive optimisation (Class-10 friendly) */
+@media (max-width: 600px) {
+  .facility {
+    padding: 15px;
+  }
+
+  .facility-number {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
+  }
+}

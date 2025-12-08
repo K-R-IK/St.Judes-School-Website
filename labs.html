@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Labs - ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="labs.css"> 
+  <link rel="stylesheet" href="common_styles.css"> 
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- MAIN CONTENT -->
+  <section class="section-block">
+    <h2>Science Labs Overview</h2>
+    <p>
+      At ST. JUDE'S SCHOOL, we are committed to providing our students with state-of-the-art science laboratories.
+      Our labs are equipped with modern tools and technology to ensure hands-on learning experiences that reinforce
+      theoretical knowledge.
+    </p>
+
+    <div class="lab-grid">
+      <div class="lab-card">
+        <h3>Physics Lab</h3>
+        <p>
+          Our Physics Lab is designed for interactive experiments in mechanics, optics, electricity, and magnetism.
+          Safety protocols are strictly followed to provide a secure learning environment.
+        </p>
+      </div>
+      <div class="lab-card">
+        <h3>Chemistry Lab</h3>
+        <p>
+          Equipped with modern apparatus, chemical reagents, and safety equipment, our Chemistry Lab allows students
+          to perform experiments in organic, inorganic, and analytical chemistry.
+        </p>
+      </div>
+      <div class="lab-card">
+        <h3>Biology Lab</h3>
+        <p>
+          The Biology Lab encourages exploration of life sciences with microscopes, specimen slides, and modern
+          biology tools. Students gain practical knowledge of anatomy, physiology, and microbiology.
+        </p>
+      </div>
+    </div>
+
+    <div class="lab-gallery">
+      <h3>Lab Gallery</h3>
+      <div class="gallery-grid">
+        <img src="physicslab.jpg" alt="Physics Lab">
+        <img src="chemistrylab(1).jpg" alt="Chemistry_Lab1">
+        <img src="biologylab.jpg" alt="Biology Lab">
+      </div>
+    </div>
+
+    <div class="lab-safety">
+      <h3>Safety First</h3>
+      <p>
+        Our school prioritizes safety in all laboratory activities. Lab assistants and teachers ensure students
+        follow strict safety measures, wear appropriate protective gear, and handle chemicals and equipment responsibly.
+      </p>
+    </div>
+    
+    <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </section>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

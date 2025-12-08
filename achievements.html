@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards & Achievements - ST. JUDE'S SCHOOL</title>
+    <link rel="stylesheet" href="achievements.css">
+    <link rel="stylesheet" href="common_styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-container">
+        <h1>AWARDS & ACHIEVEMENTS</h1>
+
+        <p>
+            At ST. JUDE'S SCHOOL, recognition isn’t a vanity metric—it's a KPI that validates 
+            sustained discipline, academic rigor, and a culture built on consistent high performance.
+            We don’t chase applause; we earn it the old-school way: dedication, values, and hard work.
+        </p>
+
+        <h2>Academic Milestones</h2>
+        <ul>
+            <li>100% Board Exam Pass Rate for the past 5 consecutive years.</li>
+            <li>Multiple district-level toppers across various subjects.</li>
+            <li>Students regularly qualifying for national scholarship examinations.</li>
+        </ul>
+
+        <h2>Co-Curricular Excellence</h2>
+        <p>
+            Balanced development isn’t a slogan here—it’s a strategic framework. Students consistently
+            secure podium finishes across events.
+        </p>
+        <ul>
+            <li>State-level winners in debate and elocution.</li>
+            <li>Top rankings in academic Olympiads.</li>
+            <li>Consistent recognition in visual arts and cultural events.</li>
+        </ul>
+
+        <h2>Sports Achievements</h2>
+        <ul>
+            <li>District champions in athletics and track events.</li>
+            <li>Multiple medals in inter-school sports tournaments.</li>
+            <li>Recognized for discipline and sportsmanship awards annually.</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>Our Operating Principle:</strong>  
+            We celebrate achievements, but we don’t get complacent. Success is a moving target, 
+            and we chase it with both tradition and forward-thinking strategy.
+        </div>
+
+        <h2>Honors Earned by the Institution</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Award</th>
+                <th>Issued By</th>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>Outstanding School for Inclusive Education</td>
+                <td>Principal</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Excellence in Co-Curricular Activities</td>
+                <td>Principal</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Top Performing Institution (Academics)</td>
+                <td>Principal</td>
+            </tr>
+        </table>
+
+        <p>
+            These honors are more than trophies—they’re checkpoints on our long-term roadmap of 
+            cultivating responsible, capable, and resilient students.
+        </p>
+        <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div id="quicklinks"></div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+   <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

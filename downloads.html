@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="downloads.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <div class="content-area">
+
+    <h1 class="page-title">Downloads</h1>
+    <p class="page-subtitle">
+      Centralized access point for academic, administrative, and student-support documents.
+      Everything is organized for quick, efficient, no-nonsense access.
+    </p>
+
+    <!-- SECTION: ACADEMIC DOWNLOADS -->
+    <section class="section-block">
+      <h2>Academic Documents</h2>
+      <p>
+        Streamline your academic workflow with official, up-to-date academic files.  
+        Perfect for students, parents, and educators.
+      </p>
+
+      <div class="download-grid">
+        <a href="academic-calendar.pdf" target="_blank" class="download-card">
+          Academic Calendar (PDF)
+        </a>
+
+        <a href="syllabus-overview.pdf" target="_blank" class="download-card">
+          Syllabus Overview (PDF)
+        </a>
+
+        <a href="assessment-guidelines.pdf" target="_blank" class="download-card">
+          Assessment Guidelines (PDF)
+        </a>
+
+        <a href="holiday-homework.pdf" target="_blank" class="download-card">
+          Holiday Homework (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION: ADMISSION DOWNLOADS -->
+    <section class="section-block">
+      <h2>Admission Documents</h2>
+      <p>
+        All mandatory documentation for new and prospective students.
+      </p>
+
+      <div class="download-grid">
+        <a href="admission-prospectus.pdf" target="_blank" class="download-card">
+          Admission Prospectus (PDF)
+        </a>
+
+        <a href="admission-form.pdf" target="_blank" class="download-card">
+          Admission Form (PDF)
+        </a>
+
+        <a href="fee-structure.pdf" target="_blank" class="download-card">
+          Fee Structure (PDF)
+        </a>
+
+        <a href="withdrawal-procedure.pdf" target="_blank" class="download-card">
+          Withdrawal Procedure (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION: CIRCULARS -->
+    <section class="section-block">
+      <h2>Official School Circulars</h2>
+      <p>
+        Latest circulars issued by the school administration for students and parents.
+      </p>
+
+      <div class="download-grid">
+        <a href="circular-1.pdf" target="_blank" class="download-card">
+          Circular – General Notice (PDF)
+        </a>
+
+        <a href="exam-update.pdf" target="_blank" class="download-card">
+          Examination Update (PDF)
+        </a>
+
+        <a href="summer-break.pdf" target="_blank" class="download-card">
+          Summer Break Notice (PDF)
+        </a>
+
+        <a href="uniform-guidelines.pdf" target="_blank" class="download-card">
+          Uniform Guidelines (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION: HEALTH & SAFETY -->
+    <section class="section-block">
+      <h2>Health & Safety Documents</h2>
+      <p>
+        Policies designed to ensure a safe, healthy, and disciplined school environment.
+      </p>
+
+      <div class="download-grid">
+        <a href="medical-policy.pdf" target="_blank" class="download-card">
+          Medical Policy (PDF)
+        </a>
+
+        <a href="emergency-protocols.pdf" target="_blank" class="download-card">
+          Emergency Protocols (PDF)
+        </a>
+
+        <a href="safety-guidelines.pdf" target="_blank" class="download-card">
+          Safety Guidelines (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION: OTHER RESOURCES -->
+    <section class="section-block">
+      <h2>Additional Resources</h2>
+      <p>
+        Extra reference materials and general-purpose documents for easy access.
+      </p>
+
+      <div class="download-grid">
+        <a href="school-brochure.pdf" target="_blank" class="download-card">
+          School Brochure (PDF)
+        </a>
+
+        <a href="transport-guidelines.pdf" target="_blank" class="download-card">
+          Transport Guidelines (PDF)
+        </a>
+
+        <a href="code-of-conduct.pdf" target="_blank" class="download-card">
+          Student Code of Conduct (PDF)
+        </a>
+
+        <a href="pta-rules.pdf" target="_blank" class="download-card">
+          PTA Rules & Structure (PDF)
+        </a>
+      </div>
+    </section>
+
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

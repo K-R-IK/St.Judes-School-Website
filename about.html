@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="common_styles.css">
+</head>
+<body>
+     
+   <!--HEADER-->
+  <div id="header"></div>
+  
+<div class="background-container">
+<section class="about-section">
+    <article class="about-content">
+<h2><u>About Our School</u></h2>
+
+<img src="SCHOOL_IMAGE.jpg" height="100%" width="100%" alt="School Image">
+<b><U>ST.JUDE'S SCHOOL</U></b>
+<br>
+<p>St. Jude's School is an unaided English Medium School established and administered by the Catholic Diocese of Lucknow, a registered society. It was founded in 2014 with the object of imparting modern education to Catholic Students in a manner that will conserve their "religion, language and culture," but admission is not denied to students professing other faiths.</p>
+
+<h2><u>AIM OF THE SCHOOL</u></h2>
+
+<p>The School aims at the integral and personal formation of young children by giving them an education which is morally, mentally and spiritually sound.
+
+The School encourages the students to keep their ideals high and to strive for excellence in every field. It endeavours to inculcate in them the value of freedom and its judicious use, respect for law and order and also teaches them to abide by moral principles, to be unselfish in the service of their country and fellowmen.</p>
+        <h2><u>Who We Are</u>?</h2>
+        <p>
+            Our institution stands on the foundation of discipline, integrity, and holistic development. 
+            For decades, we’ve delivered a structured learning ecosystem that empowers students to engage, 
+            achieve, and excel. We drive academic rigor while honoring the traditions that shaped our journey.        </p>
+
+        <h2><u>Our Mission</u>?</h2>
+        <p>
+            We aim to cultivate well-rounded individuals equipped with knowledge, values, and life skills. 
+            Our mission is straightforward: deliver quality education that stands the test of time and 
+            prepares students for tomorrow’s opportunities.
+        </p>
+        <h2><u>Our Vision</u>?</h2>
+        <p>
+            We envision a future-focused community where learners think critically, act responsibly, and 
+            grow into leaders who contribute meaningfully to society.
+        </p>
+        <h2><u>Why Choose Us</u>?</h2>
+        <ul>
+            <li>Experienced and dedicated faculty</li>
+            <li>Safe and supportive learning environment</li>
+            <li>Balanced focus on academics and extracurriculars</li>
+            <li>Strong moral and cultural foundation</li>
+            <li>Consistent track record of exceptional results</li>
+        </ul>
+     </article>
+     
+     <hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+</section>
+   
+    <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

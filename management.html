@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>School Management</title>
+  <link rel="stylesheet" href="common_styles.css" />
+  <link rel="stylesheet" href="management.css" />
+</head>
+<body>
+
+ <!--HEADER-->
+  <div id="header"></div>
+  
+  <div class="background-container">
+    <section>
+      <h2><u>School Management</u></h2>
+      <p>
+        The School Management is responsible for governance, strategic planning,
+        and ensuring the highest standards of education and student welfare.
+      </p>
+
+      <h3><u>Board of Trustees</u></h3>
+      <table class="team-table" border="1" cellpadding="8" cellspacing="0">
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td>Chairperson</td>
+          <td>Fr. Ramesh Kujur</td>
+          <td>+91-9876XXXXXX</td>
+        </tr>
+        <tr>
+          <td>Secretary</td>
+          <td>Sr. Jigisha</td>
+          <td>+91-9988XXXXXX</td>
+        </tr>
+        <tr>
+          <td>Treasurer</td>
+          <td>Ms. Agnes J Edward</td>
+          <td>+91-9123XXXXXX</td>
+        </tr>
+      </table>
+
+      <h3><u>School Administration</u></h3>
+      <table class="team-table" border="1" cellpadding="8" cellspacing="0">
+        <tr>
+          <th>Role</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Principal</td>
+          <td>Rev. Fr. Ramesh Kujur</td>
+          <td>principal@official.edu</td>
+        </tr>
+        <tr>
+          <td>Head Mistress</td>
+          <td>Sr. Jigisha</td>
+          <td>headmistress@official.edu</td>
+        </tr>
+      </table>
+
+      <h3><u>Meetings & Reports</u></h3>
+<p>
+  The School Management holds regular meetings to review the progress of the
+  school. These meetings help in planning, improving facilities, and solving
+  important issues.
+</p>
+<p>
+  A summary of these meetings, such as decisions taken or changes planned,
+  is written in the school’s official records. Parents can request this
+  information from the school office if needed.
+</p>
+
+      <h3><u>Contact the Management</u></h3>
+      <p>
+        For governance queries, email:<br />
+        <a href="mailto:management@official.edu">management@example.edu</a>
+      </p>
+                  <hr style="margin: 25px 5px;">
+      <p>
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+    </section>
+  </div>
+  
+      <!--QUICK LINKS-->
+  <div id="quicklinks"></div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+  
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Page-specific styles only — do not duplicate global/common rules here */
+
+/* Layout variables to play nicely with common.css */
+:root {
+  --page-max-width: 960px;
+  --accent: #0a66c2;
+  --muted: #666;
+  --bg-card: #ffffff;
+  --radius: 10px;
+  --gap: 1rem;
+}
+
+/* Container used on many pages */
+.container {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* Hero */
+.hero {
+  background: orange;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  padding: 1.25rem 0;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.2px;
+}
+.hero .lead {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+/* Main content */
+.content {
+  padding: 1.0rem 0 2rem;
+  display: block;
+}
+
+/* Section headings */
+.intro h2, .rules h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+/* Summary paragraph */
+.summary {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+/* Rules list */
+.rules-list {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1rem 1.1rem;
+  counter-reset: rule;
+  list-style: none;
+}
+.rules-list > li {
+  margin: 0.7rem 0;
+  padding-left: 0.6rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Numeric markers (keeps consistent look even if user CSS resets ol style) */
+.rules-list > li::before {
+  counter-increment: rule;
+  content: counter(rule) ".";
+  display: inline-block;
+  width: 2.2rem;
+  margin-right: 0.6rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Sublist styling */
+.rules-list .sublist {
+  margin: 0.5rem 0 0.2rem 2.2rem;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: subrule;
+}
+.rules-list .sublist li {
+  margin: 0.35rem 0;
+  font-size: 0.96rem;
+}
+.rules-list .sublist li::before {
+  counter-increment: subrule;
+  content: "(" counter(subrule, lower-alpha) ")";
+  margin-right: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Aside / Quick note */
+.note {
+  margin-top: 1.25rem;
+  padding: 0.85rem;
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(90deg, rgba(10,102,194,0.03), rgba(0,0,0,0.01));
+  border-radius: 6px;
+  color: var(--muted);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(0,0,0,0.04);
+  padding: 0.9rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .hero h1 { font-size: 1.25rem; }
+  .rules-list > li::before { width: 1.6rem; font-size: 0.95rem; }
+  :root { --page-max-width: 92%; }
+}
+
+/* Print-friendly adjustments */
+@media print {
+  .hero, .site-footer { color: #000; background: none; border: none; }
+  .container { padding: 0; }
+  .note { display: none; } /* hide non-essential UI on print */
+}

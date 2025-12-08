@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Resources – ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="common_styles.css">
+  <link rel="stylesheet" href="students.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <div class="sr-container">
+
+    <h1 class="sr-title">Student Resources</h1>
+    <p class="sr-subtitle">
+      Your centralized hub for academic support, digital tools, policies, and growth-focused resources.
+      Designed to keep every student aligned, organised, and future-ready.
+    </p>
+
+    <!-- SECTION: STUDY MATERIALS -->
+    <section class="sr-block">
+      <h2>Study Materials & Academic Support</h2>
+      <ul>
+        <li>Class-wise study notes and practice worksheets.</li>
+        <li>NCERT / ICSE / CBSE reference links (as applicable).</li>
+        <li>Downloadable revision modules and solved examples.</li>
+        <li>Blueprints and sample question formats.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION: DIGITAL LEARNING -->
+    <section class="sr-block">
+      <h2>Digital Learning Tools</h2>
+      <ul>
+        <li>Official online learning platforms recommended by the school.</li>
+        <li>Educational apps for quizzes, concept clarity, and practice tests.</li>
+        <li>Video lesson archives for important chapters.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION: SCHOOL POLICIES -->
+    <section class="sr-block">
+      <h2>Student Policies</h2>
+      <ul>
+        <li>Code of conduct & behaviour expectations.</li>
+        <li>Classroom discipline & attendance guidelines.</li>
+        <li>Examination integrity, rules, and restrictions.</li>
+        <li>Digital safety and responsible use of technology.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION: FORMS & DOWNLOADS -->
+    <section class="sr-block">
+      <h2>Student Forms & Downloads</h2>
+      <ul>
+        <li><a href="leave-application-form.pdf" target="_blank">Leave Application Form (PDF)</a></li>
+        <li><a href="medical-certificate-format.pdf" target="_blank">Medical Certificate Format (PDF)</a></li>
+        <li><a href="competition-entry-form.pdf" target="_blank">Competition Entry Form (PDF)</a></li>
+        <li><a href="activity-consent.pdf" target="_blank">Activity Participation Consent (PDF)</a></li>
+      </ul>
+    </section>
+
+    <!-- SECTION: CAREER & COUNSELLING -->
+    <section class="sr-block">
+      <h2>Career & Counselling Support</h2>
+      <ul>
+        <li>Guidance sessions related to higher studies and career planning.</li>
+        <li>Well-being counselling support for emotional and academic balance.</li>
+        <li>Skill-development and personality-building suggestions.</li>
+      </ul>
+    </section>
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+
+</body>
+</html>

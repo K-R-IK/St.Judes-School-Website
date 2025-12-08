@@ -1,0 +1,84 @@
+/* DISCLAIMER CSS */
+
+/* Section Headings */
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #990000;
+}
+
+section h3 {
+  font-size: 1.6em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #cc0000;
+  text-align: left;
+}
+
+/* Paragraphs */
+section p {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+/* Lists */
+section ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+section ul li {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+section ul li strong {
+  color: #990000;
+}
+
+/* Strong statements */
+section p strong {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Quick Links Section */
+#quick-links {
+  margin-top: 40px;
+}
+
+/* Buttons or highlighted notices (optional) */
+.notice {
+  background-color: #fff0f0;
+  border-left: 5px solid #cc0000;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 2em;
+  }
+
+  section h3 {
+    font-size: 1.4em;
+  }
+
+  section p,
+  section ul li {
+    font-size: 1em;
+  }
+
+  .notice {
+    padding: 12px 15px;
+  }
+}

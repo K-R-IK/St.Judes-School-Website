@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Homework - ST. JUDE'S SCHOOL</title>
+  <link rel="stylesheet" href="holiday_homework.css">
+  <link rel="stylesheet" href="common_styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <div class="hh-container">
+    <h1>Holiday Homework</h1>
+
+    <p class="intro-text">
+      To ensure students stay academically engaged while enjoying their break, the school provides thoughtfully curated
+      holiday homework. Each assignment is designed to reinforce core concepts, promote self-learning, and keep students 
+      intellectually active during vacation.
+    </p>
+
+    <!-- CLASS-WISE HOMEWORK SECTION -->
+    <h2 class="section-heading">Class-Wise Holiday Homework</h2>
+
+    <div class="homework-group">
+
+      <!-- CLASS I-V -->
+      <div class="class-block">
+        <h3>Classes I to V</h3>
+        <p>
+          Students are assigned light, concept-based tasks focusing on strengthening foundational skills. Activities include:
+        </p>
+        <ul>
+          <li>Reading short stories and summarizing them</li>
+          <li>Basic mathematics practice worksheets</li>
+          <li>Drawing and creative craft work</li>
+          <li>Environmental observation activities</li>
+        </ul>
+        <p class="download-note">
+          Download PDF:  
+          <a href="holiday_homework_primary.pdf" target="_blank">Click here</a>
+        </p>
+      </div>
+
+      <!-- CLASS VI-VIII -->
+      <div class="class-block">
+        <h3>Classes VI to VIII</h3>
+        <p>
+          Middle school assignments encourage analytical thinking, project work, and balanced subject-wise practice:
+        </p>
+        <ul>
+          <li>Mathematics revision exercises</li>
+          <li>Science model/project assignments</li>
+          <li>English grammar practice</li>
+          <li>Social Science map work</li>
+        </ul>
+        <p class="download-note">
+          Download PDF:  
+          <a href="holiday_homework_middle.pdf" target="_blank">Click here</a>
+        </p>
+      </div>
+
+      <!-- CLASS IX-X -->
+      <div class="class-block">
+        <h3>Classes IX to X</h3>
+        <p>
+          Focused subject practice aligned with board exam preparation while balancing creativity and research work:
+        </p>
+        <ul>
+          <li>Chapter-wise question banks</li>
+          <li>Science practical record updates</li>
+          <li>English literature assignments</li>
+          <li>Social Science value-based questions</li>
+        </ul>
+        <p class="download-note">
+          Download PDF:  
+          <a href="holiday_homework_secondary.pdf" target="_blank">Click here</a>
+        </p>
+      </div>
+
+      <!-- CLASS XI-XII -->
+      <div class="class-block">
+        <h3>Classes XI to XII (Commerce & Science)</h3>
+        <p>
+          Senior secondary tasks emphasize conceptual clarity, competitive exam readiness, and research-oriented work:
+        </p>
+        <ul>
+          <li>Subject-specific project reports</li>
+          <li>Numerical practice (Physics/Maths/Accounts)</li>
+          <li>Case studies for Business Studies/Economics</li>
+          <li>Practical file completion</li>
+        </ul>
+        <p class="download-note">
+          Download PDF:  
+          <a href="holiday_homework_senior.pdf" target="_blank">Click here</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- GENERAL INSTRUCTIONS -->
+    <h2 class="section-heading">General Instructions</h2>
+    <ul>
+      <li>All homework must be completed and submitted on the first day after vacation.</li>
+      <li>Assignments should be neat, clean, and written in the student’s own handwriting.</li>
+      <li>Project work must follow the specified format provided by the school.</li>
+      <li>Use only school-ruled notebooks or A4 sheets as instructed by the teacher.</li>
+      <li>Late submissions may result in marks deduction.</li>
+    </ul>
+
+<hr style="margin: 25px 5px;">
+      <p style="text-align: center">
+        <a href="admission_form.html"><b>Explore Admissions</b></a> |
+        <a href="about.html"><b>Learn More</b></a>
+      </p>
+
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div id="quicklinks"></div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+<script>
+  function loadHTML(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("quicklinks", "quicklinks.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+</body>
+</html>
